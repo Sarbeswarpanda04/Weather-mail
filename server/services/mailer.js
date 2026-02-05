@@ -1,5 +1,6 @@
 import nodemailer from "nodemailer";
 import { renderTemplate } from "./emailTemplates.js";
+import { markWelcomeSent } from "./subscriptionStore.js";
 
 const DEFAULT_GMAIL_USER = "weatherinmail@gmail.com";
 
@@ -39,6 +40,7 @@ const sendDailyWeatherEmail = async ({ recipient, weatherData }) => {
     };
 
     await transporter.sendMail(mailOptions);
+    await markWelcomeSent(recipient);
     return { ok: true };
 };
 
