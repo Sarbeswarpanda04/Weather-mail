@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherMail • Daily Weather Delivered</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page-shell">
+        <header class="navbar">
+            <div class="nav-inner">
+                <a class="brand" href="#top" aria-label="WeatherMail home">
+                    <span class="brand-icon">☀️</span>
+                    <span class="brand-text">WeatherMail</span>
+                </a>
+                <nav class="nav-links">
+                    <a href="#how-it-works">How it works</a>
+                    <a href="#sample-email">Sample email</a>
+                    <a href="#faq">FAQ</a>
+                </nav>
+                <button class="nav-cta" type="button">Subscribe</button>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero" id="top">
+                <div class="hero-content">
+                    <div class="hero-copy">
+                        <div class="eyebrow reveal" data-delay="0">
+                            Trusted daily by busy professionals
+                        </div>
+                        <h1 class="headline" aria-live="polite">
+                            <span id="typed-headline"></span>
+                            <span class="cursor" aria-hidden="true"></span>
+                        </h1>
+                        <p class="subheadline reveal" data-delay="100">
+                            Simple. Accurate. Delivered daily for your city.
+                        </p>
+                        <div class="hero-actions reveal" data-delay="200">
+                            <button class="primary" type="button" id="scroll-subscribe">Subscribe Free</button>
+                            <button class="secondary" type="button" id="open-sample">See Sample Email</button>
+                        </div>
+                        <div class="social-proof reveal" data-delay="300">
+                            <div class="avatars" aria-hidden="true">
+                                <span></span><span></span><span></span><span></span>
+                            </div>
+                            <p><strong>12,000+</strong> mornings made calmer.</p>
+                        </div>
+                    </div>
+                    <div class="hero-visual reveal" data-delay="150">
+                        <div class="illustration">
+                            <div class="floating-card" aria-hidden="true">
+                                <div class="floating-header">
+                                    <span class="dot dot--green"></span>
+                                    <span class="dot dot--yellow"></span>
+                                    <span class="dot dot--red"></span>
+                                </div>
+                                <div class="floating-body">
+                                    <div class="floating-city">Bhubaneswar</div>
+                                    <div class="floating-temp">27°</div>
+                                    <div class="floating-meta">
+                                        <span>Partly Cloudy</span>
+                                        <span>Feels like 29°</span>
+                                    </div>
+                                    <div class="floating-footer">
+                                        <div>
+                                            <small>Wind</small>
+                                            <strong>8 km/h</strong>
+                                        </div>
+                                        <div>
+                                            <small>Humidity</small>
+                                            <strong>68%</strong>
+                                        </div>
+                                        <div>
+                                            <small>Rain</small>
+                                            <strong>10%</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="subscribe" id="subscribe">
+                <div class="subscribe-card reveal" data-delay="0">
+                    <h2>Subscribe in seconds</h2>
+                    <p>Pick your city, drop your email, and get tomorrow's weather at 7 AM sharp.</p>
+                    <form class="subscribe-form" id="subscribe-form" novalidate>
+                        <div class="input-group">
+                            <label for="city-input">City</label>
+                            <div class="input-wrapper">
+                                <span class="icon" aria-hidden="true">📍</span>
+                                <input type="text" id="city-input" placeholder="Search for a city" autocomplete="off" required>
+                            </div>
+                            <ul class="suggestions" id="city-suggestions" role="listbox" aria-label="Suggested cities" hidden></ul>
+                            <p class="input-hint" id="city-hint">Start typing to search for your city.</p>
+                        </div>
+                        <div class="input-group">
+                            <label for="email-input">Email</label>
+                            <div class="input-wrapper">
+                                <span class="icon" aria-hidden="true">✉️</span>
+                                <input type="email" id="email-input" placeholder="you@example.com" required>
+                            </div>
+                            <p class="input-hint" id="email-hint">We send one email per day. That's it.</p>
+                        </div>
+                        <button class="primary full" type="submit">
+                            <span class="btn-label">Subscribe now</span>
+                            <span class="btn-spinner" aria-hidden="true"></span>
+                        </button>
+                    </form>
+                    <div class="form-feedback" id="form-feedback" role="status" aria-live="polite"></div>
+                </div>
+            </section>
+
+            <section class="details" id="how-it-works">
+                <div class="details-grid">
+                    <article class="detail-card reveal" data-delay="0">
+                        <h3>Precision forecasts</h3>
+                        <p>We combine trusted weather sources so you always get the most accurate snapshot for your morning.</p>
+                    </article>
+                    <article class="detail-card reveal" data-delay="50">
+                        <h3>Designed for focus</h3>
+                        <p>Gorgeous daily emails with only the essentials: temperature, rain odds, wind, sunrise, and a little motivation.</p>
+                    </article>
+                    <article class="detail-card reveal" data-delay="100">
+                        <h3>Set it and forget it</h3>
+                        <p>Pick your city once. Modify or pause anytime. We handle the rest without clogging your inbox.</p>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer" id="faq">
+            <div class="footer-inner">
+                <div>
+                    <strong>WeatherMail</strong>
+                    <p>Daily weather intelligence for your perfect morning routine.</p>
+                </div>
+                <div>
+                    <strong>Product</strong>
+                    <ul>
+                        <li><a href="#subscribe">Subscribe</a></li>
+                        <li><a href="#sample-email">Sample email</a></li>
+                        <li><a href="#">Pause emails</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <strong>Company</strong>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <strong>Stay in touch</strong>
+                    <p>hello@weathermail.com</p>
+                </div>
+            </div>
+            <p class="footer-note">© <span id="current-year"></span> WeatherMail. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <div class="modal" id="sample-modal" role="dialog" aria-modal="true" aria-labelledby="sample-title" hidden>
+        <div class="modal-backdrop" data-close="true"></div>
+        <section class="modal-content" role="document">
+            <header class="modal-header">
+                <h2 id="sample-title">Sample Weather Email</h2>
+                <button class="modal-close" type="button" data-close="true" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </header>
+            <div class="modal-body" id="sample-email">
+                <div class="sample-toggle" role="tablist" aria-label="Sample email type">
+                    <button type="button" class="sample-toggle__btn is-active" role="tab" aria-selected="true" data-template="daily-weather">Daily email</button>
+                    <button type="button" class="sample-toggle__btn" role="tab" aria-selected="false" data-template="welcome">Welcome email</button>
+                </div>
+                <div class="sample-loading" aria-hidden="true">
+                    <span class="sample-spinner"></span>
+                    <p>Loading the selected email preview…</p>
+                </div>
+                <div class="sample-error" role="alert" hidden>
+                    We couldn’t load the preview. Please try again shortly.
+                </div>
+                <div class="sample-preview" hidden></div>
+            </div>
+        </section>
+    </div>
+
+    <script src="./assets/js/main.js" defer></script>
+</body>
+</html>

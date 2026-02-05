@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Welcome to WeatherMail</title>
+</head>
+
+<body style="margin:0;padding:0;background-color:#f3f6fb;font-family:Arial,Helvetica,sans-serif;">
+
+    <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+        <tr>
+            <td align="center" style="padding:30px 10px;">
+
+                <!-- Logo Placeholder (Landscape) -->
+                <table width="600" cellpadding="0" cellspacing="0" role="presentation">
+                    <tr>
+                        <td align="center" style="padding-bottom:16px;">
+                            <img src="{{LOGO_URL}}" alt="WeatherMail Logo" width="600"
+                                style="max-width:100%;height:auto;border-radius:8px;display:block;" />
+                        </td>
+                    </tr>
+                </table>
+                <!-- Main Container -->
+                <table width="600" cellpadding="0" cellspacing="0" role="presentation"
+                    style="background:#ffffff;border-radius:14px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.08);">
+
+                    <!-- Header -->
+                    <tr>
+                        <td style="background:#0A2540;padding:26px 30px;text-align:center;">
+                            <h1 style="margin:0;font-size:22px;color:#ffffff;font-weight:600;">
+                                🌤️ Welcome to WeatherMail
+                            </h1>
+                            <p style="margin:6px 0 0;font-size:14px;color:#cbd5e1;">
+                                Simple • Accurate • Daily
+                            </p>
+                        </td>
+                    </tr>
+
+                    <!-- Body -->
+                    <tr>
+                        <td style="padding:32px 30px;text-align:center;">
+
+                            <h2 style="margin:0 0 14px;font-size:22px;color:#0A2540;">
+                                You’re all set!
+                            </h2>
+
+                            <p style="margin:0 0 14px;font-size:15px;color:#475569;line-height:1.7;">
+                                You’ll now receive <strong>daily weather updates</strong> for
+                                <strong style="color:#0A2540;">{{CITY_NAME}}</strong>, delivered straight
+                                to your inbox every morning.
+                            </p>
+
+                            <!-- Highlight Card -->
+                            <table width="100%" cellpadding="0" cellspacing="0" role="presentation"
+                                style="margin:24px 0;">
+                                <tr>
+                                    <td align="center">
+                                        <div
+                                            style="display:inline-block;background:#f8fafc;border-radius:10px;padding:14px 22px;">
+                                            <p style="margin:0;font-size:14px;color:#0A2540;font-weight:600;">
+                                                ⏰ First email arrives at 7:00 AM tomorrow
+                                            </p>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <p style="margin:10px 0 0;font-size:14px;color:#475569;">
+                                Each email includes temperature, conditions, and helpful details to
+                                plan your day better.
+                            </p>
+
+                        </td>
+                    </tr>
+
+                    <!-- Footer -->
+                    <tr>
+                        <td style="background:#f8fafc;padding:22px 30px;text-align:center;">
+
+                            <p style="margin:0;font-size:13px;color:#64748b;line-height:1.6;">
+                                You’re receiving this email because you subscribed to daily weather updates.
+                            </p>
+
+                            <p style="margin:10px 0 0;font-size:13px;">
+                                <a href="{{UNSUBSCRIBE_LINK}}" style="color:#0A2540;text-decoration:underline;">
+                                    Unsubscribe anytime
+                                </a>
+                            </p>
+
+                            <p style="margin:14px 0 0;font-size:12px;color:#94a3b8;">
+                                © {{YEAR}} WeatherMail • Have a great day 🌈
+                            </p>
+
+                        </td>
+                    </tr>
+
+                </table>
+
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
