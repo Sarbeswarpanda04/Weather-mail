@@ -54,7 +54,7 @@ const getSampleWelcomeData = () => ({
     CITY_NAME: "Bhubaneswar",
     YEAR: new Date().getFullYear().toString(),
     UNSUBSCRIBE_LINK: "https://weathermail.com/preferences",
-    LOGO_URL: "https://raw.githubusercontent.com/sarbeshnayak/assets/main/weathermail/emailheaderlogo.png",
+    LOGO_URL: "https://raw.githubusercontent.com/Sarbeswarpanda04/Weather-mail/refs/heads/main/public/assets/images/emailheaderlogo.png",
 });
 
 export { renderTemplate, getSampleWeatherData, getSampleWelcomeData };

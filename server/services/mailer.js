@@ -51,7 +51,7 @@ const sendWelcomeEmail = async ({ recipient, cityName }) => {
         UNSUBSCRIBE_LINK: process.env.UNSUBSCRIBE_URL ?? "https://weathermail.com/preferences",
         LOGO_URL:
             process.env.WELCOME_LOGO_URL ??
-            "https://raw.githubusercontent.com/sarbeshnayak/assets/main/weathermail/emailheaderlogo.png",
+            "https://raw.githubusercontent.com/Sarbeswarpanda04/Weather-mail/refs/heads/main/public/assets/images/emailheaderlogo.png",
     });
 
     const mailOptions = {
